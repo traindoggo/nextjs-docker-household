@@ -11,6 +11,14 @@ Nextjs でいい感じのグラフを表示する勉強
 後々統計を取るためのデータが欲しい
 
 * Household
+  + cost
+  + expense
+  + income
+  + Date
+  + [Genre]
+  + [Shop]
+  + createdAt(必要?)
+  + updatedAt(いる?)
 
 * Genre
   + 食費 grocery
@@ -28,6 +36,8 @@ Nextjs でいい感じのグラフを表示する勉強
 毎月何にいくら使っているかの内訳
 
 くらいか
+
+円グラフにしたり、棒グラフにしたり　それをTopPageにいい感じに表示する
 
 ## components
 
