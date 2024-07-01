@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Household {
+  id        Int      @id @default(autoincrement())
+  cost      Int      @default(0)
+  boughtAt  DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// TODO: Genre
+
+// TODO: Shop
