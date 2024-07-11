@@ -6,10 +6,15 @@ const links = [
     href: "/",
   },
   {
+    title: "Dashboard",
+    href: "/dashboard",
+  },
+  {
     title: "Create",
     href: "/household/create",
   },
 ];
+
 export default function Header() {
   return (
     <div className={`p-4 flex gap-4 text-xl border-b-4 border-neutral-900`}>
