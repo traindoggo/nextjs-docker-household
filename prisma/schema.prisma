@@ -7,6 +7,20 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Genre {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Shop {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
 model Household {
   id        Int      @id @default(autoincrement())
   cost      Int      @default(0)
@@ -14,7 +28,3 @@ model Household {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
-
-// TODO: Genre
-
-// TODO: Shop
